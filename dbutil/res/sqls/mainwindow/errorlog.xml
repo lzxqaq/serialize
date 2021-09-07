@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqls namespace="ErrorLog">
+    <define id="fields">LogNo, MemberID, LogTime, ActionType, ActionObject, ActionObjectID, ActionObjectName, ModuleKey, PrjName, ClientName, IsDel, Remark</define>
+
+    <sql id="findByLogId">
+        SELECT <include defineId="fields"/> FROM CSYS_Log WHERE LogNo=:LogNo
+    </sql>
+
+    <sql id="findAll">
+        SELECT <include defineId="fields"/> FROM CSYS_Log
+    </sql>
+
+    <sql id="insert">
+        INSERT INTO CSYS_Log (MemberID, LogTime, ActionType, ActionObject, ActionObjectID, ActionObjectName, ModuleKey, PrjName, ClientName, IsDel, Remark)
+        VALUES (:MemberID, :LogTime, :ActionType, :ActionObject, :ActionObjectID, :ActionObjectName, :ModuleKey, :PrjName, :ClientName, :IsDel, :Remark)
+    </sql>
+
+    <sql id="update">
+        UPDATE CSYS_Log SET MemberID=:MemberID, LogTime=:LogTime, ActionType=:ActionType, ActionObject=:ActionObject, ActionObjectID=:ActionObjectID, ActionObjectName=:ActionObjectName, ModuleKey=:ModuleKey, PrjName=:PrjName, ClientName=:ClientName, IsDel=:IsDel, Remark=:Remark
+        WHERE LogNo=:LogNo
+    </sql>
+</sqls>

@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/sqls/mainwindow/log.xml</file>
+        <file>res/sqls/systree/tree.xml</file>
+        <file>res/dbutil.json</file>
+        <file>res/sqls/mainwindow/errorlog.xml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,9 @@
+{
+    "dbutil": {
+        "debug": true,
+        "sqlFiles": [
+        ":res/sqls/mainwindow/log.xml"
+        ":res/sqls/mainwindow/errorlog.xml"
+        ]
+    }
+}

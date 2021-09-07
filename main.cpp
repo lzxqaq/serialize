@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
     int i = 0;
     QVector<User> users;
-    for (i = 0; i < 10000; i++)
+    for (i = 0; i < 1000000; i++)
     {
         User user(i, "name" + QString::number(i), "field");
         users.append(user);
